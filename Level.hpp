@@ -9,9 +9,19 @@
 #include <Engine/Scene.hpp>
 
 class Level : public engine::Scene {
+protected:
+    float m_speed;
 public:
-    Level(engine::Game* game);
+    Level(engine::Game *game);
+
     ~Level();
+
+    float GetSpeed() const {
+        return m_speed;
+    }
+
+protected:
+    virtual void OnUpdate(sf::Time interval);
 };
 
 

@@ -1,0 +1,7 @@
+{
+  "type" : "bg",
+  "size": [512, 1152],
+  "sprite": {
+    "texture": "assets/images/bg.png"
+  }
+}
