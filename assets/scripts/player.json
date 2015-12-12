@@ -1,0 +1,29 @@
+{
+  "type" : "player",
+  "size": [36, 60],
+  "origin": "center",
+  "sprite" : {
+    "sheet" : {
+      "texture" : "assets/images/player.png",
+      "sprites": [
+        [0, 0, 9, 15],
+        [9, 0, 9, 15],
+        [18, 0, 9, 15]
+      ]
+    },
+      "animations": {
+        "default" : {
+          "frames": [0,1,0,2],
+          "speed": 0.05
+        }
+      }
+  },
+  "body": {
+    "type": "dynamic",
+    "fixedRotation": true,
+    "bullet": true,
+    "shapes": [
+      {"type": "box", "width": 36, "height": 60}
+    ]
+  }
+}

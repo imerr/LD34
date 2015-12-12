@@ -1,0 +1,15 @@
+{
+  "size": [512, 576],
+  "pixelToMeter": 60.0,
+  "gravity": [0, 0],
+  "light" : {
+    "enabled": true,
+    "backgroundColor": [50, 50, 50]
+  },
+  "children": [
+    {
+      "position": [200,200],
+      "childData" : "assets/scripts/player.json"
+    }
+  ]
+}
