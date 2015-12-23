@@ -47,7 +47,7 @@ else ()
     endif ()
 endif ()
 set(SOURCE_FILES main.cpp
-        LD34.cpp LD34.hpp Level.cpp Level.hpp Player.cpp Player.hpp ScrollingBackground.cpp ScrollingBackground.hpp)
+        LD34.cpp LD34.hpp Level.cpp Level.hpp Player.cpp Player.hpp ScrollingBackground.cpp ScrollingBackground.hpp Object.cpp Object.cpp Object.hpp)
 add_executable(LD34 ${SOURCE_FILES})
 
 target_link_libraries(LD34 Engine)

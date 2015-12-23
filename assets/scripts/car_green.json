@@ -1,0 +1,18 @@
+{
+  "type" : "object",
+  "speed": [0, 1],
+  "size": [75, 130],
+  "origin": "center",
+  "sprite" : {
+    "sheet" : "assets/scripts/sheet_cars.json",
+    "index": 1
+  },
+  "body": {
+    "type": "dynamic",
+    "fixedRotation": true,
+    "bullet": true,
+    "shapes": [
+      {"type": "box", "width": 50, "height": 110}
+    ]
+  }
+}

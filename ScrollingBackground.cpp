@@ -12,7 +12,7 @@ ScrollingBackground::~ScrollingBackground() {
 void ScrollingBackground::OnUpdate(sf::Time interval) {
     engine::SpriteNode::OnUpdate(interval);
     auto& pos = getPosition();
-    float speed = 10 * static_cast<Level*>(m_scene)->GetSpeed();
+    float speed = 60 * sqrtf(static_cast<Level*>(m_scene)->GetSpeed() * 2.0f);
     if (pos.y + speed * interval.asSeconds() > 0) {
         setPosition(pos.x, pos.y - m_size.y/2 + speed * interval.asSeconds());
     } else {

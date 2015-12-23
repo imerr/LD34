@@ -1,7 +1,7 @@
 {
   "type" : "player",
   "size": [36, 60],
-  "position": [256, 650],
+  "position": [256, 1000],
   "origin": "center",
   "sprite" : {
     "sheet" : {

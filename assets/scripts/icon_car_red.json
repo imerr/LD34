@@ -1,0 +1,9 @@
+{
+  "type" : "sprite",
+  "size": [29, 50],
+  "origin": "center",
+  "sprite" : {
+    "sheet" : "assets/scripts/sheet_cars.json",
+    "index": 3
+  }
+}

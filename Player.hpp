@@ -15,17 +15,11 @@ protected:
     b2Vec2 m_toPosVel;
     float m_toPosTime;
     uint8_t m_slot;
-    float m_jumping;
-    sf::Keyboard::Key m_lastPressed;
-    float m_lastPressedTimeout;
+    void* m_collisionHandler;
 public:
     Player(engine::Scene* scene);
     ~Player();
     void GoTo();
-    bool IsJumping() {
-        return m_jumping > 0 && m_jumping < 0.45;
-    };
-    void Jump();
     virtual bool initialize(Json::Value& root);
     void ProcessKey(sf::Keyboard::Key key);
 protected:

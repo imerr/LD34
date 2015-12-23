@@ -1,13 +1,69 @@
 {
-  "size": [512, 576],
+  "size": [512, 864],
   "pixelToMeter": 60.0,
   "gravity": [0, 0],
   "light" : {
     "enabled": true,
     "backgroundColor": [50, 50, 50]
   },
+  "ui": [
+      {
+        "type": "sprite",
+        "position": [0,0],
+        "size": [512, 30],
+        "sprite": {
+          "texture": "assets/images/uibg.png"
+        }
+      },
+      {
+        "type": "text",
+        "position": [196, 2],
+        "identifier": "score",
+        "text": {
+          "font": "assets/lcd_solid.ttf",
+          "size": 20,
+          "text": "0",
+          "align": "right"
+        }
+      },
+      {
+        "type": "text",
+        "position": [320, 2],
+        "identifier": "change",
+        "text": {
+          "font": "assets/lcd_solid.ttf",
+          "size": 20,
+          "text": "+ 0",
+          "color": [255, 255, 255],
+          "align": "left"
+        }
+      },
+      {
+        "type": "sprite",
+        "position": [450, 32],
+        "size": [60, 60],
+        "identifier": "searching",
+        "sprite": {
+          "texture": "assets/images/searching.png"
+        },
+        "children": [
+        ]
+      }
+  ],
   "children": [
     {"childData" : "assets/scripts/bg.json"},
     {"childData" : "assets/scripts/player.json"}
+  ],
+  "objects" : [
+    "assets/scripts/car_blue.json",
+    "assets/scripts/car_green.json",
+    "assets/scripts/car_red.json",
+    "assets/scripts/car_pink.json"
+  ],
+  "objectIcons": [
+    "assets/scripts/icon_car_blue.json",
+    "assets/scripts/icon_car_green.json",
+    "assets/scripts/icon_car_red.json",
+    "assets/scripts/icon_car_pink.json"
   ]
 }
